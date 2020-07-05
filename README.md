@@ -13,7 +13,6 @@ Be sure to do a site wide search/replace for the following:
 {package-description} - Example: The summary
 {package-slug} - Example: The full slug, like kevinbatdorf/alpine-plugin-template
 {package-slug-short} - Example: alpine-plugin-template
-{package-year} - Example: The current year
 ```
 TODO: Automate with an npm script like npm run setup or something
 
