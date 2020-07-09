@@ -4,11 +4,10 @@ function FunctionName() {
 	})
 }
 
-const buffered = window.deferLoadingAlpine || false
-window.deferLoadingAlpine = function (alpine) {
-	FunctionName()
-	typeof buffered == "function" && buffered()
-	alpine()
+const alpine = window.deferLoadingAlpine || ((alpine) => alpine())
+window.deferLoadingAlpine = function(callback) {
+	AlpineAutoInit()
+	alpine(callback)
 }
 
 module.exports = FunctionName
